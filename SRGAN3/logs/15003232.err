@@ -1,0 +1,13 @@
+Loaded dependency [python3/3.9.11]: gcc/10.3.0-binutils-2.36.1
+Loaded module: python3/3.9.11
+
+Switching from python3/3.9.11 to python3/3.9.11
+  Loading requirement: gcc/10.3.0-binutils-2.36.1
+Loaded module: cuda/10.1
+/zhome/39/c/174709/git/srgan3/venv/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/zhome/39/c/174709/git/srgan3/venv/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/zhome/39/c/174709/git/srgan3/venv/lib/python3.9/site-packages/torchvision/transforms/transforms.py:329: UserWarning: Argument 'interpolation' of type int is deprecated since 0.13 and will be removed in 0.15. Please use InterpolationMode enum.
+  warnings.warn(
+User defined signal 2

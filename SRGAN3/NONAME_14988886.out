@@ -1,0 +1,39 @@
+JOBID      USER    QUEUE      JOB_NAME   NALLOC STAT  START_TIME      ELAPSED
+14988886   s220493 hpc        NONAME          0 PEND       -          0:00:00
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 14988886: <NONAME> in cluster <dcc> Done
+
+Job <NONAME> was submitted from host <n-62-30-7> by user <s220493> in cluster <dcc> at Sat Dec  3 13:47:00 2022
+Job was executed on host(s) <n-62-31-4>, in queue <hpc>, as user <s220493> in cluster <dcc> at Sat Dec  3 13:47:02 2022
+</zhome/39/c/174709> was used as the home directory.
+</zhome/39/c/174709/git/srgan3> was used as the working directory.
+Started at Sat Dec  3 13:47:02 2022
+Terminated at Sat Dec  3 13:47:03 2022
+Results reported at Sat Dec  3 13:47:03 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bstat
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.37 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   94 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) is above this job summary.
+

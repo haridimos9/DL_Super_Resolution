@@ -1,0 +1,1575 @@
+Running script...
+Mon Dec  5 19:14:06 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 520.61.05    Driver Version: 520.61.05    CUDA Version: 11.8     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:3B:00.0 Off |                    0 |
+| N/A   39C    P0    43W / 300W |      0MiB / 32768MiB |      0%   E. Process |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Namespace(epoch=0, n_epochs=200, dataset_name='img_align_celeba', batch_size=2, lr=0.0002, b1=0.5, b2=0.999, decay_epoch=100, n_cpu=4, hr_height=480, hr_width=480, channels=3, sample_interval=20, checkpoint_interval=50, downsampling=4, frames_per_sample=7, data_root_folder='clips', resize_hr=1, validation_interval=10)
+Cuda is available: True
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 0/248] [D loss: 0.588116] [G loss: 0.709216] [PSNR: 6.026464]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 1/248] [D loss: 2.653413] [G loss: 0.677184] [PSNR: 3.735266]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 2/248] [D loss: 1.021729] [G loss: 0.673735] [PSNR: 4.510965]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 3/248] [D loss: 0.645945] [G loss: 0.596584] [PSNR: 5.419107]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 4/248] [D loss: 1.038006] [G loss: 0.682142] [PSNR: 3.803411]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 5/248] [D loss: 0.802170] [G loss: 0.799681] [PSNR: 2.520293]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 6/248] [D loss: 0.479899] [G loss: 0.634784] [PSNR: 1.343930]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 7/248] [D loss: 0.381836] [G loss: 0.605271] [PSNR: 3.702694]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 8/248] [D loss: 0.350477] [G loss: 0.714204] [PSNR: 1.991365]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 9/248] [D loss: 0.361226] [G loss: 0.689525] [PSNR: 0.872943]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 10/248] [D loss: 0.359054] [G loss: 0.680997] [PSNR: 0.572519]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 11/248] [D loss: 0.328636] [G loss: 0.636322] [PSNR: 1.413583]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 12/248] [D loss: 0.296919] [G loss: 0.678011] [PSNR: 0.537531]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 13/248] [D loss: 0.303281] [G loss: 0.740984] [PSNR: 0.827139]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 14/248] [D loss: 0.351646] [G loss: 0.689515] [PSNR: 0.229392]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 15/248] [D loss: 0.404812] [G loss: 0.707347] [PSNR: 0.874625]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 16/248] [D loss: 0.285798] [G loss: 0.652548] [PSNR: -0.327813]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 17/248] [D loss: 0.270754] [G loss: 0.697735] [PSNR: 0.457399]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 18/248] [D loss: 0.274021] [G loss: 0.585373] [PSNR: -2.331081]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 19/248] [D loss: 0.349357] [G loss: 0.672255] [PSNR: -0.029685]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 20/248] [D loss: 0.243103] [G loss: 0.575529] [PSNR: 0.226376]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 21/248] [D loss: 0.364197] [G loss: 0.615640] [PSNR: -0.843312]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 22/248] [D loss: 0.250845] [G loss: 0.618543] [PSNR: 0.689333]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 23/248] [D loss: 0.263824] [G loss: 0.565089] [PSNR: 0.885701]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 24/248] [D loss: 0.209068] [G loss: 0.651995] [PSNR: 0.439265]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 25/248] [D loss: 0.200597] [G loss: 0.599163] [PSNR: -0.054180]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 26/248] [D loss: 0.173305] [G loss: 0.634598] [PSNR: -2.131407]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 27/248] [D loss: 0.110161] [G loss: 0.587595] [PSNR: -0.284646]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 28/248] [D loss: 0.127860] [G loss: 0.546209] [PSNR: -0.505210]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 29/248] [D loss: 0.076456] [G loss: 0.482136] [PSNR: -3.488043]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 30/248] [D loss: 0.100370] [G loss: 0.589646] [PSNR: -1.504488]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 31/248] [D loss: 0.180674] [G loss: 0.548980] [PSNR: -1.182871]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 32/248] [D loss: 0.102961] [G loss: 0.577297] [PSNR: -1.137526]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 33/248] [D loss: 0.136275] [G loss: 0.552096] [PSNR: -1.547335]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 34/248] [D loss: 0.112680] [G loss: 0.559647] [PSNR: -0.466329]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 35/248] [D loss: 0.076200] [G loss: 0.561129] [PSNR: -2.740843]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 36/248] [D loss: 0.070912] [G loss: 0.578920] [PSNR: -1.917510]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 37/248] [D loss: 0.039489] [G loss: 0.542603] [PSNR: -3.124288]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 38/248] [D loss: 0.036736] [G loss: 0.546209] [PSNR: -2.793648]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 39/248] [D loss: 0.050022] [G loss: 0.397010] [PSNR: -3.960101]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 40/248] [D loss: 0.059345] [G loss: 0.542026] [PSNR: -2.929920]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 41/248] [D loss: 0.043179] [G loss: 0.476189] [PSNR: -3.527588]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 42/248] [D loss: 0.021981] [G loss: 0.481145] [PSNR: -4.079713]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 43/248] [D loss: 0.025509] [G loss: 0.409401] [PSNR: -1.797735]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 44/248] [D loss: 0.032610] [G loss: 0.384982] [PSNR: -2.968335]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 45/248] [D loss: 0.045015] [G loss: 0.427994] [PSNR: -1.627203]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 46/248] [D loss: 0.057781] [G loss: 0.386755] [PSNR: -3.329270]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 47/248] [D loss: 0.053302] [G loss: 0.442236] [PSNR: -1.719860]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 48/248] [D loss: 0.041362] [G loss: 0.519784] [PSNR: -3.441630]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 49/248] [D loss: 0.025848] [G loss: 0.458494] [PSNR: -2.492653]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 50/248] [D loss: 0.030320] [G loss: 0.398045] [PSNR: -1.615113]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 51/248] [D loss: 0.031764] [G loss: 0.561757] [PSNR: -2.341462]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 52/248] [D loss: 0.019510] [G loss: 0.457753] [PSNR: -3.470823]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 53/248] [D loss: 0.016462] [G loss: 0.462209] [PSNR: -2.184885]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 54/248] [D loss: 0.020378] [G loss: 0.445811] [PSNR: -1.741423]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 55/248] [D loss: 0.014381] [G loss: 0.428132] [PSNR: -3.167888]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 56/248] [D loss: 0.015312] [G loss: 0.447443] [PSNR: -3.305531]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 57/248] [D loss: 0.017446] [G loss: 0.416866] [PSNR: -2.710472]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 58/248] [D loss: 0.011674] [G loss: 0.435908] [PSNR: -3.911285]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 59/248] [D loss: 0.009980] [G loss: 0.364486] [PSNR: -4.541122]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 60/248] [D loss: 0.015748] [G loss: 0.394584] [PSNR: -3.134844]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 61/248] [D loss: 0.014224] [G loss: 0.448291] [PSNR: -3.509868]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 62/248] [D loss: 0.014514] [G loss: 0.369297] [PSNR: -4.393368]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 63/248] [D loss: 0.016604] [G loss: 0.459475] [PSNR: -3.162683]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 64/248] [D loss: 0.019271] [G loss: 0.342398] [PSNR: -1.905721]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 65/248] [D loss: 0.015335] [G loss: 0.330085] [PSNR: -3.051277]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 66/248] [D loss: 0.012575] [G loss: 0.356840] [PSNR: -2.954863]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 67/248] [D loss: 0.018719] [G loss: 0.455840] [PSNR: -2.015001]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 68/248] [D loss: 0.029591] [G loss: 0.444643] [PSNR: -2.545926]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 69/248] [D loss: 0.012732] [G loss: 0.309954] [PSNR: -4.447863]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 70/248] [D loss: 0.027364] [G loss: 0.424201] [PSNR: -1.653672]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 71/248] [D loss: 0.014968] [G loss: 0.461143] [PSNR: -2.829842]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 72/248] [D loss: 0.022741] [G loss: 0.555356] [PSNR: -3.670003]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 73/248] [D loss: 0.020322] [G loss: 0.476460] [PSNR: -3.221063]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 74/248] [D loss: 0.010905] [G loss: 0.358345] [PSNR: -3.739058]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 75/248] [D loss: 0.010746] [G loss: 0.402803] [PSNR: -2.263169]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 76/248] [D loss: 0.013693] [G loss: 0.407056] [PSNR: -3.288619]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 77/248] [D loss: 0.011675] [G loss: 0.492771] [PSNR: -2.479449]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 78/248] [D loss: 0.010973] [G loss: 0.425885] [PSNR: -2.605313]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 79/248] [D loss: 0.010964] [G loss: 0.499730] [PSNR: -1.836048]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 80/248] [D loss: 0.009947] [G loss: 0.399244] [PSNR: -2.171616]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 81/248] [D loss: 0.010621] [G loss: 0.463934] [PSNR: -1.922754]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 82/248] [D loss: 0.012388] [G loss: 0.456499] [PSNR: -2.893030]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 83/248] [D loss: 0.011988] [G loss: 0.394482] [PSNR: -2.081072]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 84/248] [D loss: 0.012271] [G loss: 0.469600] [PSNR: -3.374424]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 85/248] [D loss: 0.012774] [G loss: 0.384319] [PSNR: -2.023029]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 86/248] [D loss: 0.012571] [G loss: 0.332481] [PSNR: -3.126887]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 87/248] [D loss: 0.010112] [G loss: 0.483803] [PSNR: -2.209490]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 88/248] [D loss: 0.011113] [G loss: 0.337102] [PSNR: -3.230037]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 89/248] [D loss: 0.016323] [G loss: 0.468739] [PSNR: -3.402407]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 90/248] [D loss: 0.010068] [G loss: 0.390538] [PSNR: -3.041662]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 91/248] [D loss: 0.011263] [G loss: 0.465456] [PSNR: -2.099519]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 92/248] [D loss: 0.012183] [G loss: 0.397929] [PSNR: -2.892334]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 93/248] [D loss: 0.017034] [G loss: 0.382009] [PSNR: -1.793531]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 94/248] [D loss: 0.009655] [G loss: 0.444921] [PSNR: -3.183435]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 95/248] [D loss: 0.009547] [G loss: 0.463694] [PSNR: -2.198839]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 96/248] [D loss: 0.012006] [G loss: 0.416788] [PSNR: -3.262836]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 97/248] [D loss: 0.007761] [G loss: 0.392410] [PSNR: -2.208473]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 98/248] [D loss: 0.008081] [G loss: 0.388339] [PSNR: -3.093454]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 99/248] [D loss: 0.008290] [G loss: 0.432493] [PSNR: -1.538198]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 100/248] [D loss: 0.014175] [G loss: 0.380509] [PSNR: -1.664847]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 101/248] [D loss: 0.008958] [G loss: 0.364999] [PSNR: -4.499967]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 102/248] [D loss: 0.011766] [G loss: 0.421998] [PSNR: -2.423291]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 103/248] [D loss: 0.014839] [G loss: 0.380026] [PSNR: -1.637347]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 104/248] [D loss: 0.008083] [G loss: 0.430242] [PSNR: -2.937072]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 105/248] [D loss: 0.009616] [G loss: 0.332559] [PSNR: -3.113268]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 106/248] [D loss: 0.011510] [G loss: 0.355112] [PSNR: -4.443438]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 107/248] [D loss: 0.012735] [G loss: 0.385899] [PSNR: -2.126768]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 108/248] [D loss: 0.014585] [G loss: 0.402912] [PSNR: -3.057375]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 109/248] [D loss: 0.017121] [G loss: 0.463082] [PSNR: -3.114414]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 110/248] [D loss: 0.016806] [G loss: 0.452273] [PSNR: -3.243451]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 111/248] [D loss: 0.010051] [G loss: 0.379956] [PSNR: -3.825242]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 112/248] [D loss: 0.022702] [G loss: 0.483450] [PSNR: -2.880874]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 113/248] [D loss: 0.013742] [G loss: 0.526444] [PSNR: -3.354508]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 114/248] [D loss: 0.011219] [G loss: 0.389233] [PSNR: -2.805949]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 115/248] [D loss: 0.008958] [G loss: 0.501089] [PSNR: -2.485006]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 116/248] [D loss: 0.017581] [G loss: 0.350478] [PSNR: -2.981208]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 117/248] [D loss: 0.009590] [G loss: 0.374700] [PSNR: -2.095116]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 118/248] [D loss: 0.014946] [G loss: 0.477986] [PSNR: -2.448428]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 119/248] [D loss: 0.017173] [G loss: 0.390377] [PSNR: -3.244078]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 120/248] [D loss: 0.015688] [G loss: 0.447384] [PSNR: -3.083875]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 121/248] [D loss: 0.016997] [G loss: 0.360163] [PSNR: -2.386210]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 122/248] [D loss: 0.015481] [G loss: 0.323449] [PSNR: -3.052234]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 123/248] [D loss: 0.012278] [G loss: 0.366755] [PSNR: -4.167117]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 124/248] [D loss: 0.016754] [G loss: 0.432917] [PSNR: -3.546491]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 125/248] [D loss: 0.010228] [G loss: 0.394762] [PSNR: -1.248976]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 126/248] [D loss: 0.009650] [G loss: 0.390316] [PSNR: -3.630275]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 127/248] [D loss: 0.014042] [G loss: 0.427897] [PSNR: -2.367951]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 128/248] [D loss: 0.014400] [G loss: 0.343012] [PSNR: -1.906926]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 129/248] [D loss: 0.013472] [G loss: 0.383577] [PSNR: -2.771434]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 130/248] [D loss: 0.017807] [G loss: 0.369286] [PSNR: -2.087954]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 131/248] [D loss: 0.042066] [G loss: 0.354656] [PSNR: -3.153562]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 132/248] [D loss: 0.013740] [G loss: 0.564272] [PSNR: -3.278050]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 133/248] [D loss: 0.009993] [G loss: 0.380247] [PSNR: -3.931005]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 134/248] [D loss: 0.007437] [G loss: 0.390671] [PSNR: -3.381049]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 135/248] [D loss: 0.006575] [G loss: 0.465834] [PSNR: -3.419143]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 136/248] [D loss: 0.017024] [G loss: 0.454544] [PSNR: -2.713083]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 137/248] [D loss: 0.025090] [G loss: 0.471082] [PSNR: -2.966297]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 138/248] [D loss: 0.021354] [G loss: 0.466535] [PSNR: -1.594349]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 139/248] [D loss: 0.018694] [G loss: 0.381389] [PSNR: -1.844398]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 140/248] [D loss: 0.011015] [G loss: 0.446485] [PSNR: -2.858236]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 141/248] [D loss: 0.010903] [G loss: 0.361028] [PSNR: -2.509735]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 142/248] [D loss: 0.013979] [G loss: 0.376692] [PSNR: -1.866402]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 143/248] [D loss: 0.008329] [G loss: 0.426358] [PSNR: -1.558826]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 144/248] [D loss: 0.007947] [G loss: 0.383503] [PSNR: -3.135374]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 145/248] [D loss: 0.008386] [G loss: 0.448528] [PSNR: -3.684269]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 146/248] [D loss: 0.016585] [G loss: 0.373933] [PSNR: -3.826514]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 147/248] [D loss: 0.017915] [G loss: 0.428221] [PSNR: -1.667445]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 148/248] [D loss: 0.004520] [G loss: 0.377004] [PSNR: -3.757719]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 149/248] [D loss: 0.006090] [G loss: 0.400177] [PSNR: -3.130050]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 150/248] [D loss: 0.004205] [G loss: 0.483646] [PSNR: -3.341265]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 151/248] [D loss: 0.012171] [G loss: 0.379479] [PSNR: -3.055184]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 152/248] [D loss: 0.010504] [G loss: 0.475180] [PSNR: -3.322563]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 153/248] [D loss: 0.011829] [G loss: 0.449643] [PSNR: -3.140288]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 154/248] [D loss: 0.007776] [G loss: 0.507543] [PSNR: -3.328699]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 155/248] [D loss: 0.017956] [G loss: 0.414065] [PSNR: -2.247980]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 156/248] [D loss: 0.014134] [G loss: 0.527856] [PSNR: -3.313761]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 157/248] [D loss: 0.007302] [G loss: 0.474974] [PSNR: -3.346297]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 158/248] [D loss: 0.008766] [G loss: 0.369244] [PSNR: -4.430101]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 159/248] [D loss: 0.009854] [G loss: 0.360134] [PSNR: -1.587965]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 160/248] [D loss: 0.013878] [G loss: 0.306773] [PSNR: -3.132434]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 161/248] [D loss: 0.012213] [G loss: 0.412289] [PSNR: -2.936782]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 162/248] [D loss: 0.005720] [G loss: 0.399919] [PSNR: -3.077674]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 163/248] [D loss: 0.008493] [G loss: 0.313566] [PSNR: -1.577221]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 164/248] [D loss: 0.028513] [G loss: 0.479698] [PSNR: -3.346340]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 165/248] [D loss: 0.010326] [G loss: 0.414173] [PSNR: -2.004928]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 166/248] [D loss: 0.013080] [G loss: 0.466190] [PSNR: -1.670762]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 167/248] [D loss: 0.021625] [G loss: 0.427285] [PSNR: -3.771689]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 168/248] [D loss: 0.009907] [G loss: 0.561000] [PSNR: -2.124990]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 169/248] [D loss: 0.010117] [G loss: 0.463796] [PSNR: -3.053048]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 170/248] [D loss: 0.004071] [G loss: 0.385118] [PSNR: -1.788430]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 171/248] [D loss: 0.008377] [G loss: 0.334064] [PSNR: -3.878816]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 172/248] [D loss: 0.007064] [G loss: 0.367924] [PSNR: -2.372930]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 173/248] [D loss: 0.006010] [G loss: 0.476385] [PSNR: -3.633241]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 174/248] [D loss: 0.005155] [G loss: 0.464772] [PSNR: -1.848862]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 175/248] [D loss: 0.010655] [G loss: 0.353274] [PSNR: -1.398182]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 176/248] [D loss: 0.010381] [G loss: 0.422352] [PSNR: -2.316094]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 177/248] [D loss: 0.012398] [G loss: 0.405767] [PSNR: -1.866817]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 178/248] [D loss: 0.009273] [G loss: 0.440417] [PSNR: -3.209829]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 179/248] [D loss: 0.004683] [G loss: 0.406375] [PSNR: -3.584264]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 180/248] [D loss: 0.008012] [G loss: 0.366373] [PSNR: -1.537159]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 181/248] [D loss: 0.005916] [G loss: 0.424979] [PSNR: -3.340271]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 182/248] [D loss: 0.008905] [G loss: 0.470227] [PSNR: -1.262348]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 183/248] [D loss: 0.004841] [G loss: 0.363202] [PSNR: -3.003278]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 184/248] [D loss: 0.005255] [G loss: 0.371654] [PSNR: -1.837348]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 185/248] [D loss: 0.004465] [G loss: 0.384885] [PSNR: -1.971513]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 186/248] [D loss: 0.005013] [G loss: 0.378586] [PSNR: -1.753397]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 187/248] [D loss: 0.004182] [G loss: 0.469647] [PSNR: -1.700322]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 188/248] [D loss: 0.005467] [G loss: 0.379233] [PSNR: -4.319310]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 189/248] [D loss: 0.005472] [G loss: 0.401923] [PSNR: -2.213126]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 190/248] [D loss: 0.005664] [G loss: 0.399357] [PSNR: -3.139589]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 191/248] [D loss: 0.010633] [G loss: 0.414279] [PSNR: -4.278941]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 192/248] [D loss: 0.017444] [G loss: 0.409710] [PSNR: -3.245693]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 193/248] [D loss: 0.018154] [G loss: 0.422998] [PSNR: -4.197588]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 194/248] [D loss: 0.011006] [G loss: 0.373477] [PSNR: -3.076506]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 195/248] [D loss: 0.014532] [G loss: 0.418444] [PSNR: -1.089675]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 196/248] [D loss: 0.011971] [G loss: 0.361593] [PSNR: -3.528479]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 197/248] [D loss: 0.009966] [G loss: 0.584495] [PSNR: -1.296083]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 198/248] [D loss: 0.006644] [G loss: 0.447980] [PSNR: -2.001827]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 199/248] [D loss: 0.006304] [G loss: 0.354039] [PSNR: -2.392317]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 200/248] [D loss: 0.012321] [G loss: 0.419832] [PSNR: -3.701491]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 201/248] [D loss: 0.011249] [G loss: 0.378335] [PSNR: -3.865274]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 202/248] [D loss: 0.006122] [G loss: 0.445734] [PSNR: -3.359510]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 203/248] [D loss: 0.010300] [G loss: 0.341156] [PSNR: -3.029760]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 204/248] [D loss: 0.007064] [G loss: 0.436179] [PSNR: -2.338391]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 205/248] [D loss: 0.008840] [G loss: 0.445614] [PSNR: -2.832980]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 206/248] [D loss: 0.009058] [G loss: 0.353707] [PSNR: -4.372650]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 207/248] [D loss: 0.005446] [G loss: 0.413994] [PSNR: -3.493768]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 208/248] [D loss: 0.007925] [G loss: 0.553112] [PSNR: -1.892869]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 209/248] [D loss: 0.005519] [G loss: 0.409389] [PSNR: -3.184729]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 210/248] [D loss: 0.009006] [G loss: 0.384909] [PSNR: -2.145339]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 211/248] [D loss: 0.007126] [G loss: 0.511926] [PSNR: -2.310334]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 212/248] [D loss: 0.006730] [G loss: 0.443482] [PSNR: -2.385804]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 213/248] [D loss: 0.004682] [G loss: 0.434971] [PSNR: -3.389207]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 214/248] [D loss: 0.007130] [G loss: 0.422744] [PSNR: -3.526679]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 215/248] [D loss: 0.004906] [G loss: 0.459282] [PSNR: -3.156143]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 216/248] [D loss: 0.004906] [G loss: 0.444966] [PSNR: -2.557102]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 217/248] [D loss: 0.006268] [G loss: 0.352596] [PSNR: -1.453802]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 218/248] [D loss: 0.009378] [G loss: 0.409271] [PSNR: -3.359289]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 219/248] [D loss: 0.007879] [G loss: 0.407907] [PSNR: -2.326216]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 220/248] [D loss: 0.005083] [G loss: 0.461613] [PSNR: -2.977406]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 221/248] [D loss: 0.005745] [G loss: 0.463199] [PSNR: -3.358008]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 222/248] [D loss: 0.003622] [G loss: 0.386693] [PSNR: -4.100527]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 223/248] [D loss: 0.003705] [G loss: 0.360551] [PSNR: -1.602018]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 224/248] [D loss: 0.003235] [G loss: 0.481116] [PSNR: -3.103940]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 225/248] [D loss: 0.004884] [G loss: 0.427921] [PSNR: -2.616295]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 226/248] [D loss: 0.012193] [G loss: 0.435287] [PSNR: -1.902619]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 227/248] [D loss: 0.012501] [G loss: 0.366015] [PSNR: -2.488833]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 228/248] [D loss: 0.008473] [G loss: 0.426123] [PSNR: -1.517640]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 229/248] [D loss: 0.009849] [G loss: 0.443266] [PSNR: -3.343151]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 230/248] [D loss: 0.007108] [G loss: 0.411580] [PSNR: -2.112237]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 231/248] [D loss: 0.004834] [G loss: 0.460824] [PSNR: -3.915799]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 232/248] [D loss: 0.007894] [G loss: 0.280666] [PSNR: -4.184211]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 233/248] [D loss: 0.005072] [G loss: 0.413046] [PSNR: -3.929753]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 234/248] [D loss: 0.003639] [G loss: 0.418822] [PSNR: -1.132528]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 235/248] [D loss: 0.010496] [G loss: 0.364584] [PSNR: -2.993045]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 236/248] [D loss: 0.004133] [G loss: 0.437150] [PSNR: -2.255474]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 237/248] [D loss: 0.005161] [G loss: 0.477421] [PSNR: -1.809878]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 238/248] [D loss: 0.003986] [G loss: 0.449860] [PSNR: -3.250175]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 239/248] [D loss: 0.004548] [G loss: 0.363009] [PSNR: -2.104062]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 240/248] [D loss: 0.003803] [G loss: 0.425028] [PSNR: -1.941520]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 241/248] [D loss: 0.004906] [G loss: 0.510023] [PSNR: -0.957251]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 242/248] [D loss: 0.003901] [G loss: 0.449635] [PSNR: -3.205026]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 243/248] [D loss: 0.004648] [G loss: 0.386621] [PSNR: -2.914449]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 244/248] [D loss: 0.006578] [G loss: 0.407098] [PSNR: -1.486852]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 245/248] [D loss: 0.004566] [G loss: 0.434559] [PSNR: -2.085920]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 0/200] [Batch 246/248] [D loss: 0.005183] [G loss: 0.372706] [PSNR: -3.318856]
+gen_hr shape: torch.Size([1, 3, 480, 480])
+torch.Size([1, 1, 30, 30])
+torch.Size([1, 1, 30, 30])
+[Epoch 0/200] [Batch 247/248] [D loss: 0.009496] [G loss: 0.456099] [PSNR: -2.218139]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 0/248] [D loss: 0.012482] [G loss: 0.348491] [PSNR: -2.372571]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 1/248] [D loss: 0.013697] [G loss: 0.437482] [PSNR: -3.200479]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 2/248] [D loss: 0.007540] [G loss: 0.438549] [PSNR: -2.859098]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 3/248] [D loss: 0.013594] [G loss: 0.370240] [PSNR: -2.674504]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 4/248] [D loss: 0.008248] [G loss: 0.464070] [PSNR: -1.485516]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 5/248] [D loss: 0.014895] [G loss: 0.432932] [PSNR: -3.998086]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 6/248] [D loss: 0.017128] [G loss: 0.494855] [PSNR: -3.201789]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 7/248] [D loss: 0.006440] [G loss: 0.456251] [PSNR: -1.702278]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 8/248] [D loss: 0.010379] [G loss: 0.345785] [PSNR: -3.161726]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 9/248] [D loss: 0.004917] [G loss: 0.401487] [PSNR: -2.892191]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 10/248] [D loss: 0.004844] [G loss: 0.394296] [PSNR: -1.382025]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 11/248] [D loss: 0.004375] [G loss: 0.407725] [PSNR: -2.558761]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 12/248] [D loss: 0.002579] [G loss: 0.409514] [PSNR: -1.917212]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 13/248] [D loss: 0.002680] [G loss: 0.380802] [PSNR: -1.587604]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 14/248] [D loss: 0.004526] [G loss: 0.415091] [PSNR: -3.543052]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 15/248] [D loss: 0.005880] [G loss: 0.345517] [PSNR: -3.178861]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 16/248] [D loss: 0.006700] [G loss: 0.392715] [PSNR: -1.816636]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 17/248] [D loss: 0.005959] [G loss: 0.371057] [PSNR: -1.664068]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 18/248] [D loss: 0.003862] [G loss: 0.516890] [PSNR: -3.136870]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 19/248] [D loss: 0.006959] [G loss: 0.398175] [PSNR: -2.132409]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 20/248] [D loss: 0.002151] [G loss: 0.385306] [PSNR: -3.772013]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 21/248] [D loss: 0.005579] [G loss: 0.402863] [PSNR: -1.902635]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 22/248] [D loss: 0.009900] [G loss: 0.348086] [PSNR: -3.798552]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 23/248] [D loss: 0.008095] [G loss: 0.379668] [PSNR: -1.204672]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 24/248] [D loss: 0.006512] [G loss: 0.457391] [PSNR: -2.264669]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 25/248] [D loss: 0.009045] [G loss: 0.387702] [PSNR: -3.275382]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 26/248] [D loss: 0.008072] [G loss: 0.495371] [PSNR: -3.319735]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 27/248] [D loss: 0.004102] [G loss: 0.460505] [PSNR: -3.701504]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 28/248] [D loss: 0.005677] [G loss: 0.414710] [PSNR: -3.314433]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 29/248] [D loss: 0.003956] [G loss: 0.379164] [PSNR: -3.357380]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 30/248] [D loss: 0.006897] [G loss: 0.481261] [PSNR: -2.544067]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 31/248] [D loss: 0.006737] [G loss: 0.497381] [PSNR: -3.345703]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 32/248] [D loss: 0.004272] [G loss: 0.454902] [PSNR: -1.969822]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 33/248] [D loss: 0.008305] [G loss: 0.429706] [PSNR: -2.120421]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 34/248] [D loss: 0.005367] [G loss: 0.449520] [PSNR: -3.402891]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 35/248] [D loss: 0.007024] [G loss: 0.370399] [PSNR: -3.528599]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 36/248] [D loss: 0.006703] [G loss: 0.359858] [PSNR: -3.135177]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 37/248] [D loss: 0.003396] [G loss: 0.431656] [PSNR: -3.833851]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 38/248] [D loss: 0.004266] [G loss: 0.372910] [PSNR: -3.030385]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 39/248] [D loss: 0.004386] [G loss: 0.425584] [PSNR: -1.825529]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 40/248] [D loss: 0.005568] [G loss: 0.419223] [PSNR: -1.953669]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 41/248] [D loss: 0.005004] [G loss: 0.481725] [PSNR: -3.389153]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 42/248] [D loss: 0.009505] [G loss: 0.424594] [PSNR: -3.461913]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 43/248] [D loss: 0.008558] [G loss: 0.350935] [PSNR: -4.430218]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 44/248] [D loss: 0.013302] [G loss: 0.436673] [PSNR: -1.734131]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 45/248] [D loss: 0.003855] [G loss: 0.518303] [PSNR: -3.175970]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 46/248] [D loss: 0.006544] [G loss: 0.358268] [PSNR: -3.112334]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 47/248] [D loss: 0.009721] [G loss: 0.468141] [PSNR: -1.572441]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 48/248] [D loss: 0.021193] [G loss: 0.418718] [PSNR: -3.373036]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 49/248] [D loss: 0.005524] [G loss: 0.373797] [PSNR: -3.055547]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 50/248] [D loss: 0.013332] [G loss: 0.475086] [PSNR: -3.453795]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 51/248] [D loss: 0.007524] [G loss: 0.347805] [PSNR: -3.563950]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 52/248] [D loss: 0.006260] [G loss: 0.456567] [PSNR: -2.652261]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 53/248] [D loss: 0.004603] [G loss: 0.440666] [PSNR: -3.358133]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 54/248] [D loss: 0.011362] [G loss: 0.316173] [PSNR: -4.459499]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 55/248] [D loss: 0.023797] [G loss: 0.346606] [PSNR: -3.560259]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 56/248] [D loss: 0.013707] [G loss: 0.303923] [PSNR: -4.430848]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 57/248] [D loss: 0.007481] [G loss: 0.358131] [PSNR: -3.359265]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 58/248] [D loss: 0.013308] [G loss: 0.462500] [PSNR: -3.262711]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 59/248] [D loss: 0.004823] [G loss: 0.393058] [PSNR: -4.319715]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 60/248] [D loss: 0.012329] [G loss: 0.429716] [PSNR: -3.232746]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 61/248] [D loss: 0.009230] [G loss: 0.363626] [PSNR: -1.990004]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 62/248] [D loss: 0.016028] [G loss: 0.448963] [PSNR: -3.358980]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 63/248] [D loss: 0.011518] [G loss: 0.461243] [PSNR: -3.140230]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 64/248] [D loss: 0.012356] [G loss: 0.493148] [PSNR: -3.338186]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 65/248] [D loss: 0.007947] [G loss: 0.354972] [PSNR: -3.942648]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 66/248] [D loss: 0.007331] [G loss: 0.470016] [PSNR: -3.326761]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 67/248] [D loss: 0.004895] [G loss: 0.481751] [PSNR: -3.341831]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 68/248] [D loss: 0.003829] [G loss: 0.458021] [PSNR: -2.785470]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 69/248] [D loss: 0.004124] [G loss: 0.352839] [PSNR: -4.487834]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 70/248] [D loss: 0.002751] [G loss: 0.273628] [PSNR: -4.500071]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 71/248] [D loss: 0.006315] [G loss: 0.459322] [PSNR: -2.650513]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 72/248] [D loss: 0.008706] [G loss: 0.439861] [PSNR: -2.046657]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 73/248] [D loss: 0.008327] [G loss: 0.432882] [PSNR: -1.713818]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 74/248] [D loss: 0.009558] [G loss: 0.460959] [PSNR: -3.858943]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 75/248] [D loss: 0.012783] [G loss: 0.445723] [PSNR: -3.513749]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 76/248] [D loss: 0.004697] [G loss: 0.416361] [PSNR: -3.757834]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 77/248] [D loss: 0.014039] [G loss: 0.452337] [PSNR: -1.830863]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 78/248] [D loss: 0.013431] [G loss: 0.453847] [PSNR: -1.290623]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 79/248] [D loss: 0.008016] [G loss: 0.397448] [PSNR: -1.799293]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 80/248] [D loss: 0.010798] [G loss: 0.321360] [PSNR: -1.446886]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 81/248] [D loss: 0.004418] [G loss: 0.358086] [PSNR: -4.443486]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 82/248] [D loss: 0.006332] [G loss: 0.438209] [PSNR: -3.755932]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 83/248] [D loss: 0.009304] [G loss: 0.395551] [PSNR: -4.336656]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 84/248] [D loss: 0.008957] [G loss: 0.378161] [PSNR: -1.305533]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 85/248] [D loss: 0.023302] [G loss: 0.391639] [PSNR: -1.454007]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 86/248] [D loss: 0.010208] [G loss: 0.388361] [PSNR: -3.185625]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 87/248] [D loss: 0.010178] [G loss: 0.380454] [PSNR: -2.749907]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 88/248] [D loss: 0.006884] [G loss: 0.407126] [PSNR: -3.919260]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 89/248] [D loss: 0.003335] [G loss: 0.449156] [PSNR: -3.334457]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 90/248] [D loss: 0.005731] [G loss: 0.367213] [PSNR: -1.665781]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 91/248] [D loss: 0.004055] [G loss: 0.472042] [PSNR: -3.384567]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 92/248] [D loss: 0.002801] [G loss: 0.310980] [PSNR: -2.702646]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 93/248] [D loss: 0.004670] [G loss: 0.475278] [PSNR: -3.929827]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 94/248] [D loss: 0.014290] [G loss: 0.404218] [PSNR: -1.250568]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 95/248] [D loss: 0.007471] [G loss: 0.314886] [PSNR: -2.834547]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 96/248] [D loss: 0.005551] [G loss: 0.360102] [PSNR: -1.577350]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 97/248] [D loss: 0.019344] [G loss: 0.538023] [PSNR: -1.296315]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 98/248] [D loss: 0.014163] [G loss: 0.314181] [PSNR: -4.399094]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 99/248] [D loss: 0.010109] [G loss: 0.409953] [PSNR: -2.255669]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 100/248] [D loss: 0.012518] [G loss: 0.333162] [PSNR: -3.056472]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 101/248] [D loss: 0.018941] [G loss: 0.366154] [PSNR: -1.312746]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 102/248] [D loss: 0.006589] [G loss: 0.428542] [PSNR: -2.081416]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 103/248] [D loss: 0.020899] [G loss: 0.448086] [PSNR: -2.981831]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 104/248] [D loss: 0.021785] [G loss: 0.421510] [PSNR: -3.077960]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 105/248] [D loss: 0.012266] [G loss: 0.430256] [PSNR: -2.833483]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 106/248] [D loss: 0.026061] [G loss: 0.511910] [PSNR: -3.263380]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 107/248] [D loss: 0.009437] [G loss: 0.402691] [PSNR: -2.367180]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 108/248] [D loss: 0.005181] [G loss: 0.500431] [PSNR: -3.016809]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 109/248] [D loss: 0.006063] [G loss: 0.352796] [PSNR: -2.241873]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 110/248] [D loss: 0.011208] [G loss: 0.366796] [PSNR: -1.655649]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 111/248] [D loss: 0.003467] [G loss: 0.305576] [PSNR: -3.095969]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 112/248] [D loss: 0.002864] [G loss: 0.417803] [PSNR: -3.343492]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 113/248] [D loss: 0.002313] [G loss: 0.419909] [PSNR: -2.033707]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 114/248] [D loss: 0.004595] [G loss: 0.380945] [PSNR: -1.527649]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 115/248] [D loss: 0.003535] [G loss: 0.394528] [PSNR: -3.337481]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 116/248] [D loss: 0.006189] [G loss: 0.464685] [PSNR: -0.957869]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 117/248] [D loss: 0.002403] [G loss: 0.387764] [PSNR: -3.896596]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 118/248] [D loss: 0.004135] [G loss: 0.469506] [PSNR: -2.199918]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 119/248] [D loss: 0.006551] [G loss: 0.393922] [PSNR: -3.357408]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 120/248] [D loss: 0.004443] [G loss: 0.487786] [PSNR: -2.603673]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 121/248] [D loss: 0.007858] [G loss: 0.413256] [PSNR: -2.270934]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 122/248] [D loss: 0.011711] [G loss: 0.412593] [PSNR: -3.289259]
+gen_hr shape: torch.Size([2, 3, 480, 480])
+torch.Size([2, 1, 30, 30])
+torch.Size([2, 1, 30, 30])
+[Epoch 1/200] [Batch 123/248] [D loss: 0.007383] [G loss: 0.506241] [PSNR: -3.328154]
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 14996761: <myJob> in cluster <dcc> Exited
+
+Job <myJob> was submitted from host <n-62-27-22> by user <s220493> in cluster <dcc> at Mon Dec  5 18:58:16 2022
+Job was executed on host(s) <4*n-62-20-11>, in queue <gpuv100>, as user <s220493> in cluster <dcc> at Mon Dec  5 19:14:06 2022
+</zhome/39/c/174709> was used as the home directory.
+</zhome/39/c/174709/git/srgan3> was used as the working directory.
+Started at Mon Dec  5 19:14:06 2022
+Terminated at Mon Dec  5 22:00:39 2022
+Results reported at Mon Dec  5 22:00:39 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+ #!/bin/sh
+ #BSUB -q gpuv100
+ #BSUB -gpu "num=1:mode=exclusive_process"
+ #BSUB -J myJob
+ #BSUB -n 4
+ #BSUB -W 24:00
+ #BSUB -R "span[hosts=1]"
+ #BSUB -R "rusage[mem=39GB]"
+ #BSUB -o logs/%J.out
+ #BSUB -e logs/%J.err
+ echo "Running script..."
+
+nvidia-smi
+module swap python3/3.9.11
+module swap cuda/10.1
+
+
+source ./venv/bin/activate
+
+python3 srgan.py --data_root_folder 'clips' --n_cpu 4 --sample_interval 20 --checkpoint_interval 50 --hr_height 480 --hr_width 480 --batch_size 2
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   13982.00 sec.
+    Max Memory :                                 2762 MB
+    Average Memory :                             2513.26 MB
+    Total Requested Memory :                     159744.00 MB
+    Delta Memory :                               156982.00 MB
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                58
+    Run time :                                   9995 sec.
+    Turnaround time :                            10943 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <logs/14996761.err> for stderr output of this job.
+
