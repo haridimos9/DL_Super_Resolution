@@ -35,5 +35,21 @@ For the `iSeeBetter` model, the consecutive frames must be stored in folders nam
 
 Moreover, a `.txt` file is created and stored in `data`, where the frames to use are stored. Example are located in the [Vid4](https://github.com/haridimos9/DL_Super_Resolution/tree/main/iSeeBetter/Vid4) folder.
 
+After the frames have been stored alongside the `frames_to_load.txt` file, the test can be run using the following command, under a virtual environment:
+```bash
+python iSeeBetterTest.py --data_dir Vid4 --file_list frames_to_load.txt 
+```
+where the frames are stored in the directory Vid4 with the specified format.
+If the APIT Loss model is required to be used for testing:
+
+```bash
+python iSeeBetterTest.py --data_dir Vid4 --file_list frames_to_load.txt --model  netG_epoch_4_1_APITLoss.pth 
+```
+
+More arguments can be seen by the command
+```bash
+python iSeeBetterTest.py --help
+```
+
 ## Results reproduction
 A quick test can be run using the file `reproduce.ipynb`. After having installed all the required libraries (requirements.txt) for each model, open the jupyter notebook `reproduce.ipynb` and run all the cells.
