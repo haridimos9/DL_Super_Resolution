@@ -31,7 +31,9 @@ python implementations/ESRGAN/test_on_many_images.py --images_path data --checkp
 where the frames are stores in the directory `data` and the model checkpoints, in `.pth` format, are saved in the directory `weights`, at the same level as `implementations`.
 
 #### Note about the `iSeeBetter` model
-For the `iSeeBetter` model, the frames must be stored
+For the `iSeeBetter` model, the consecutive frames must be stored in folders named `1`, `2`, inside the main data directory, eg. `data` or `Vid4`. Inide a frames folder, the frames must be named `im1.png` up to `im7.png`.
+
+Moreover, a `.txt` file is created and stored in `data`, where the frames to use are stored. Example are located in the [Vid4](https://github.com/haridimos9/DL_Super_Resolution/tree/main/iSeeBetter/Vid4) folder.
 
 ## Results reproduction
 A quick test can be run using the file `reproduce.ipynb`. After having installed all the required libraries (requirements.txt) for each model, open the jupyter notebook `reproduce.ipynb` and run all the cells.
