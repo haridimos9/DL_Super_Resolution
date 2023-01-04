@@ -28,7 +28,10 @@ to see al the required arguments for the file `test_on_many_images.py`. An examp
 ```bash
 python implementations/ESRGAN/test_on_many_images.py --images_path data --checkpoint_model weights
 ```
-where the frames are stores in the directory `data` and the model checkpoints, in `.pth` format, are saved in the directory `weights`, at the same level as `implementations`.
+where the frames are stores in the directory `data` and the model checkpoints, in `.pth` format, are saved in the directory `weights`, at the same level as `implementations`. For the ESRGAN model the trained weights can be fetced from
+```
+https://drive.google.com/file/d/1qrwUmyzggJc-NbwnfADH4MyXlHEDx2Ua/view?usp=sharing
+```
 
 #### Note about the `iSeeBetter` model
 For the `iSeeBetter` model, the consecutive frames must be stored in folders named `1`, `2`, inside the main data directory, eg. `data` or `Vid4`. Inide a frames folder, the frames must be named `im1.png` up to `im7.png`.
