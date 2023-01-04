@@ -11,32 +11,49 @@ from skimage import img_as_float
 from random import randrange
 import os.path
 
+
 def is_image_file(filename):
     return any(filename.endswith(extension) for extension in [".png", ".jpg", ".jpeg"])
 
+
 def load_img(filepath, nFrames, scale, other_dataset, upscale_only):
     seq = [i for i in range(1, nFrames)]
-    #random.shuffle(seq) #if random sequence
+    # random.shuffle(seq) #if random sequence
     if other_dataset:
         if upscale_only:
-            target = Image.open(filepath).convert('RGB')
-            input=target
+            target = Image.open(filepath).convert("RGB")
+            input = target
         else:
-            target = modcrop(Image.open(filepath).convert('RGB'),scale)
-            input=target.resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC)
-        
+            target = modcrop(Image.open(filepath).convert("RGB"), scale)
+            input = target.resize(
+                (int(target.size[0] / scale), int(target.size[1] / scale)),
+                Image.BICUBIC,
+            )
+
         char_len = len(filepath)
-        neigbor=[]
+        neigbor = []
 
         for i in seq:
-            index = int(filepath[char_len-7:char_len-4])-i
-            file_name=filepath[0:char_len-7]+'{0:03d}'.format(index)+'.png'
-            
+            index = int(filepath[char_len - 7 : char_len - 4]) - i
+            file_name = filepath[0 : char_len - 7] + "{0:03d}".format(index) + ".png"
+
             if os.path.exists(file_name):
                 if upscale_only:
-                    temp = Image.open(filepath[0:char_len-7]+'{0:03d}'.format(index)+'.png').convert('RGB')
+                    temp = Image.open(
+                        filepath[0 : char_len - 7] + "{0:03d}".format(index) + ".png"
+                    ).convert("RGB")
                 else:
-                    temp = modcrop(Image.open(filepath[0:char_len-7]+'{0:03d}'.format(index)+'.png').convert('RGB'),scale).resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC)
+                    temp = modcrop(
+                        Image.open(
+                            filepath[0 : char_len - 7]
+                            + "{0:03d}".format(index)
+                            + ".png"
+                        ).convert("RGB"),
+                        scale,
+                    ).resize(
+                        (int(target.size[0] / scale), int(target.size[1] / scale)),
+                        Image.BICUBIC,
+                    )
                 neigbor.append(temp)
             else:
                 # print('neigbor frame is not exist')
@@ -44,77 +61,121 @@ def load_img(filepath, nFrames, scale, other_dataset, upscale_only):
                 neigbor.append(temp)
     else:
         if upscale_only:
-            target = Image.open(join(filepath,'im'+str(nFrames)+'.png')).convert('RGB')
-            input  = target
-            neigbor = [Image.open(filepath+'/im'+str(j)+'.png').convert('RGB') for j in reversed(seq)]
+            target = Image.open(join(filepath, "im" + str(nFrames) + ".png")).convert(
+                "RGB"
+            )
+            input = target
+            neigbor = [
+                Image.open(filepath + "/im" + str(j) + ".png").convert("RGB")
+                for j in reversed(seq)
+            ]
         else:
-            target = modcrop(Image.open(join(filepath,'im'+str(nFrames)+'.png')).convert('RGB'), scale)
-            input = target.resize((int(target.size[0]/scale), int(target.size[1]/scale)), Image.BICUBIC)
-            neigbor = [modcrop(Image.open(filepath+'/im'+str(j)+'.png').convert('RGB'), scale).resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC) for j in reversed(seq)]
-    
+            target = modcrop(
+                Image.open(join(filepath, "im" + str(nFrames) + ".png")).convert("RGB"),
+                scale,
+            )
+            input = target.resize(
+                (int(target.size[0] / scale), int(target.size[1] / scale)),
+                Image.BICUBIC,
+            )
+            neigbor = [
+                modcrop(
+                    Image.open(filepath + "/im" + str(j) + ".png").convert("RGB"), scale
+                ).resize(
+                    (int(target.size[0] / scale), int(target.size[1] / scale)),
+                    Image.BICUBIC,
+                )
+                for j in reversed(seq)
+            ]
+
     return target, input, neigbor
 
+
 def load_img_future(filepath, nFrames, scale, other_dataset, upscale_only):
-    tt = int(nFrames/2)
+    tt = int(nFrames / 2)
     if other_dataset:
         if upscale_only:
-            target = Image.open(filepath).convert('RGB')
+            target = Image.open(filepath).convert("RGB")
             input = target
         else:
-            target = modcrop(Image.open(filepath).convert('RGB'),scale)
-            input = target.resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC)
-        
+            target = modcrop(Image.open(filepath).convert("RGB"), scale)
+            input = target.resize(
+                (int(target.size[0] / scale), int(target.size[1] / scale)),
+                Image.BICUBIC,
+            )
+
         char_len = len(filepath)
-        neigbor=[]
-        if nFrames%2 == 0:
-            seq = [x for x in range(-tt,tt) if x!=0] # or seq = [x for x in range(-tt+1,tt+1) if x!=0]
+        neigbor = []
+        if nFrames % 2 == 0:
+            seq = [
+                x for x in range(-tt, tt) if x != 0
+            ]  # or seq = [x for x in range(-tt+1,tt+1) if x!=0]
         else:
-            seq = [x for x in range(-tt,tt+1) if x!=0]
-        
-        print(seq)
-        #random.shuffle(seq) #if random sequence
+            filename = os.path.basename(filepath)
+            file_id = int(filename.split(".")[0])
+            seq = [x for x in range(file_id - tt, file_id + tt + 1) if x != file_id]
+
+        # random.shuffle(seq) #if random sequence
         for i in seq:
             if i < 0:
-                temp=input
+                temp = input
                 neigbor.append(temp)
             else:
                 path_to_file = filepath.split(os.path.basename(filepath))[0]
                 neigh_name = f"{i}.png"
-                #index1 = int(filepath[char_len-7:char_len-4])+i
-                #file_name1=filepath[0:char_len-7]+'{0:03d}'.format(index1)+'.png'
-                #print(file_name1)
+                # index1 = int(filepath[char_len-7:char_len-4])+i
+                # file_name1=filepath[0:char_len-7]+'{0:03d}'.format(index1)+'.png'
+                # print(file_name1)
                 file_name1 = os.path.join(path_to_file, neigh_name)
                 if os.path.exists(file_name1):
                     if upscale_only:
-                        temp = Image.open(file_name1).convert('RGB')
+                        temp = Image.open(file_name1).convert("RGB")
                     else:
-                        temp = modcrop(Image.open(file_name1).convert('RGB'), scale).resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC)
+                        temp = modcrop(
+                            Image.open(file_name1).convert("RGB"), scale
+                        ).resize(
+                            (int(target.size[0] / scale), int(target.size[1] / scale)),
+                            Image.BICUBIC,
+                        )
                     neigbor.append(temp)
                 else:
-                    # print('neigbor frame- is not exist')
-                    temp=input
+                    print(f"i: {i}, neigbor frame- is not exist")
+                    temp = input
                     neigbor.append(temp)
-            
+
     else:
         if upscale_only:
-            target = Image.open(join(filepath,'im4.png')).convert('RGB')
+            target = Image.open(join(filepath, "im4.png")).convert("RGB")
             input = target
         else:
-            target = modcrop(Image.open(join(filepath,'im4.png')).convert('RGB'),scale)
-            input = target.resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC)
+            target = modcrop(
+                Image.open(join(filepath, "im4.png")).convert("RGB"), scale
+            )
+            input = target.resize(
+                (int(target.size[0] / scale), int(target.size[1] / scale)),
+                Image.BICUBIC,
+            )
         neigbor = []
-        seq = [x for x in range(4-tt,5+tt) if x!=4]
-        #random.shuffle(seq) #if random sequence
+        seq = [x for x in range(4 - tt, 5 + tt) if x != 4]
+        # random.shuffle(seq) #if random sequence
         for j in seq:
-            neigbor.append(modcrop(Image.open(filepath+'/im'+str(j)+'.png').convert('RGB'), scale).resize((int(target.size[0]/scale),int(target.size[1]/scale)), Image.BICUBIC))
+            neigbor.append(
+                modcrop(
+                    Image.open(filepath + "/im" + str(j) + ".png").convert("RGB"), scale
+                ).resize(
+                    (int(target.size[0] / scale), int(target.size[1] / scale)),
+                    Image.BICUBIC,
+                )
+            )
     return target, input, neigbor
+
 
 def get_flow(im1, im2):
     im1 = np.array(im1)
     im2 = np.array(im2)
-    im1 = im1.astype(float) / 255.
-    im2 = im2.astype(float) / 255.
-    
+    im1 = im1.astype(float) / 255.0
+    im2 = im2.astype(float) / 255.0
+
     # Flow Options:
     alpha = 0.012
     ratio = 0.75
@@ -123,29 +184,42 @@ def get_flow(im1, im2):
     nInnerFPIterations = 1
     nSORIterations = 30
     colType = 0  # 0 or default:RGB, 1:GRAY (but pass gray image with shape (h,w,1))
-    
-    u, v, im2W = pyflow.coarse2fine_flow(im1, im2, alpha, ratio, minWidth, nOuterFPIterations, nInnerFPIterations,nSORIterations, colType)
+
+    u, v, im2W = pyflow.coarse2fine_flow(
+        im1,
+        im2,
+        alpha,
+        ratio,
+        minWidth,
+        nOuterFPIterations,
+        nInnerFPIterations,
+        nSORIterations,
+        colType,
+    )
     flow = np.concatenate((u[..., None], v[..., None]), axis=2)
-    #flow = rescale_flow(flow,0,1)
+    # flow = rescale_flow(flow,0,1)
     return flow
 
-def rescale_flow(x,max_range,min_range):
+
+def rescale_flow(x, max_range, min_range):
     max_val = np.max(x)
     min_val = np.min(x)
-    return (max_range-min_range)/(max_val-min_val)*(x-max_val)+max_range
+    return (max_range - min_range) / (max_val - min_val) * (x - max_val) + max_range
+
 
 def modcrop(img, modulo):
     (ih, iw) = img.size
-    ih = ih - (ih%modulo)
-    iw = iw - (iw%modulo)
+    ih = ih - (ih % modulo)
+    iw = iw - (iw % modulo)
     img = img.crop((0, 0, ih, iw))
     return img
+
 
 def get_patch(img_in, img_tar, img_nn, patch_size, scale, nFrames, ix=-1, iy=-1):
     (ih, iw) = img_in.size
     (th, tw) = (scale * ih, scale * iw)
 
-    patch_mult = scale #if len(scale) > 1 else 1
+    patch_mult = scale  # if len(scale) > 1 else 1
     tp = patch_mult * patch_size
     ip = tp // scale
 
@@ -156,51 +230,67 @@ def get_patch(img_in, img_tar, img_nn, patch_size, scale, nFrames, ix=-1, iy=-1)
 
     (tx, ty) = (scale * ix, scale * iy)
 
-    img_in = img_in.crop((iy,ix,iy + ip, ix + ip))#[:, iy:iy + ip, ix:ix + ip]
-    img_tar = img_tar.crop((ty,tx,ty + tp, tx + tp))#[:, ty:ty + tp, tx:tx + tp]
-    img_nn = [j.crop((iy,ix,iy + ip, ix + ip)) for j in img_nn] #[:, iy:iy + ip, ix:ix + ip]
-                
-    info_patch = {
-        'ix': ix, 'iy': iy, 'ip': ip, 'tx': tx, 'ty': ty, 'tp': tp}
+    img_in = img_in.crop((iy, ix, iy + ip, ix + ip))  # [:, iy:iy + ip, ix:ix + ip]
+    img_tar = img_tar.crop((ty, tx, ty + tp, tx + tp))  # [:, ty:ty + tp, tx:tx + tp]
+    img_nn = [
+        j.crop((iy, ix, iy + ip, ix + ip)) for j in img_nn
+    ]  # [:, iy:iy + ip, ix:ix + ip]
+
+    info_patch = {"ix": ix, "iy": iy, "ip": ip, "tx": tx, "ty": ty, "tp": tp}
 
     return img_in, img_tar, img_nn, info_patch
 
+
 def augment(img_in, img_tar, img_nn, flip_h=True, rot=True):
-    info_aug = {'flip_h': False, 'flip_v': False, 'trans': False}
-    
+    info_aug = {"flip_h": False, "flip_v": False, "trans": False}
+
     if random.random() < 0.5 and flip_h:
         img_in = ImageOps.flip(img_in)
         img_tar = ImageOps.flip(img_tar)
         img_nn = [ImageOps.flip(j) for j in img_nn]
-        info_aug['flip_h'] = True
+        info_aug["flip_h"] = True
 
     if rot:
         if random.random() < 0.5:
             img_in = ImageOps.mirror(img_in)
             img_tar = ImageOps.mirror(img_tar)
             img_nn = [ImageOps.mirror(j) for j in img_nn]
-            info_aug['flip_v'] = True
+            info_aug["flip_v"] = True
         if random.random() < 0.5:
             img_in = img_in.rotate(180)
             img_tar = img_tar.rotate(180)
             img_nn = [j.rotate(180) for j in img_nn]
-            info_aug['trans'] = True
+            info_aug["trans"] = True
 
     return img_in, img_tar, img_nn, info_aug
-    
+
+
 def rescale_img(img_in, scale):
     size_in = img_in.size
     new_size_in = tuple([int(x * scale) for x in size_in])
     img_in = img_in.resize(new_size_in, resample=Image.BICUBIC)
     return img_in
 
+
 class DatasetFromFolder(data.Dataset):
-    def __init__(self, image_dir,nFrames, upscale_factor, data_augmentation, file_list, other_dataset, patch_size, future_frame, transform=None, upscale_only=False):
+    def __init__(
+        self,
+        image_dir,
+        nFrames,
+        upscale_factor,
+        data_augmentation,
+        file_list,
+        other_dataset,
+        patch_size,
+        future_frame,
+        transform=None,
+        upscale_only=False,
+    ):
         super(DatasetFromFolder, self).__init__()
-        alist = [line.rstrip() for line in open(join(image_dir,file_list))]
-        self.image_filenames = [join(image_dir,x) for x in alist]
-        #print(alist)
-        #print(self.image_filenames)
+        alist = [line.rstrip() for line in open(join(image_dir, file_list))]
+        self.image_filenames = [join(image_dir, x) for x in alist]
+        # print(alist)
+        # print(self.image_filenames)
         self.nFrames = nFrames
         self.upscale_factor = upscale_factor
         self.transform = transform
@@ -210,40 +300,69 @@ class DatasetFromFolder(data.Dataset):
         self.future_frame = future_frame
         self.upscale_only = upscale_only
 
-
     def __getitem__(self, index):
         if self.future_frame:
-            target, input, neigbor = load_img_future(self.image_filenames[index], self.nFrames, self.upscale_factor, self.other_dataset, upscale_only=False)
+            target, input, neigbor = load_img_future(
+                self.image_filenames[index],
+                self.nFrames,
+                self.upscale_factor,
+                self.other_dataset,
+                upscale_only=False,
+            )
         else:
-            target, input, neigbor = load_img(self.image_filenames[index], self.nFrames, self.upscale_factor, self.other_dataset, upscale_only=False)
+            target, input, neigbor = load_img(
+                self.image_filenames[index],
+                self.nFrames,
+                self.upscale_factor,
+                self.other_dataset,
+                upscale_only=False,
+            )
 
         if self.patch_size != 0:
-            input, target, neigbor, _ = get_patch(input,target,neigbor,self.patch_size, self.upscale_factor, self.nFrames)
-        
+            input, target, neigbor, _ = get_patch(
+                input,
+                target,
+                neigbor,
+                self.patch_size,
+                self.upscale_factor,
+                self.nFrames,
+            )
+
         if self.data_augmentation:
             input, target, neigbor, _ = augment(input, target, neigbor)
-            
-        flow = [get_flow(input,j) for j in neigbor]
-            
+
+        flow = [get_flow(input, j) for j in neigbor]
+
         bicubic = rescale_img(input, self.upscale_factor)
-        
+
         if self.transform:
             target = self.transform(target)
             input = self.transform(input)
             bicubic = self.transform(bicubic)
             neigbor = [self.transform(j) for j in neigbor]
-            flow = [torch.from_numpy(j.transpose(2,0,1)) for j in flow]
+            flow = [torch.from_numpy(j.transpose(2, 0, 1)) for j in flow]
 
         return input, target, neigbor, flow, bicubic
 
     def __len__(self):
         return len(self.image_filenames)
 
+
 class DatasetFromFolderTest(data.Dataset):
-    def __init__(self, image_dir, nFrames, upscale_factor, file_list, other_dataset, future_frame, transform=None, upscale_only=False):
+    def __init__(
+        self,
+        image_dir,
+        nFrames,
+        upscale_factor,
+        file_list,
+        other_dataset,
+        future_frame,
+        transform=None,
+        upscale_only=False,
+    ):
         super(DatasetFromFolderTest, self).__init__()
-        alist = [line.rstrip() for line in open(join(image_dir,file_list))]
-        self.image_filenames = [join(image_dir,x) for x in alist]
+        alist = [line.rstrip() for line in open(join(image_dir, file_list))]
+        self.image_filenames = [join(image_dir, x) for x in alist]
         self.nFrames = nFrames
         self.upscale_factor = upscale_factor
         self.transform = transform
@@ -253,22 +372,34 @@ class DatasetFromFolderTest(data.Dataset):
 
     def __getitem__(self, index):
         if self.future_frame:
-            target, input, neigbor = load_img_future(self.image_filenames[index], self.nFrames, self.upscale_factor, self.other_dataset, self.upscale_only)
+            target, input, neigbor = load_img_future(
+                self.image_filenames[index],
+                self.nFrames,
+                self.upscale_factor,
+                self.other_dataset,
+                self.upscale_only,
+            )
         else:
-            target, input, neigbor = load_img(self.image_filenames[index], self.nFrames, self.upscale_factor, self.other_dataset, self.upscale_only)
-            
-        flow = [get_flow(input,j) for j in neigbor]
+            target, input, neigbor = load_img(
+                self.image_filenames[index],
+                self.nFrames,
+                self.upscale_factor,
+                self.other_dataset,
+                self.upscale_only,
+            )
+
+        flow = [get_flow(input, j) for j in neigbor]
 
         bicubic = rescale_img(input, self.upscale_factor)
-        
+
         if self.transform:
             target = self.transform(target)
             input = self.transform(input)
             bicubic = self.transform(bicubic)
             neigbor = [self.transform(j) for j in neigbor]
-            flow = [torch.from_numpy(j.transpose(2,0,1)) for j in flow]
-            
+            flow = [torch.from_numpy(j.transpose(2, 0, 1)) for j in flow]
+
         return input, target, neigbor, flow, bicubic
-      
+
     def __len__(self):
         return len(self.image_filenames)
