@@ -27,7 +27,7 @@ python implementations/ESRGAN/test_on_many_images.py --help
 to see al the required arguments for the file `test_on_many_images.py`. An example run can be:
 ```bash
 python implementations/ESRGAN/test_on_many_images.py --images_path data --checkpoint_model weights
-
+```
 where the frames are stores in the directory `data` and the model checkpoints, in `.pth` format, are saved in the directory `weights`, at the same level as `implementations`.
 
 #### Note about the `iSeeBetter` model
